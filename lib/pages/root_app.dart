@@ -1,5 +1,9 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
+import 'package:fincontrolapp/pages/acoes.dart';
+import 'package:fincontrolapp/pages/cadastro.dart';
 import 'package:fincontrolapp/pages/gastos.dart';
+import 'package:fincontrolapp/pages/grafico.dart';
+import 'package:fincontrolapp/pages/perfil.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
@@ -34,25 +38,17 @@ class _RootAppState extends State<RootApp> {
       index: pageIndex,
       children: const [
         GastosPage(),
-        Center(
-          child: Text("Grafico"),
-        ),
-        Center(
-          child: Text("Ações"),
-        ),
-        Center(
-          child: Text("Perfil"),
-        ),
-        Center(
-          child: Text("Cadastro"),
-        ),
+        GraficosPage(),
+        AcoesPage(),
+        PerfilPage(),
+        CadastroPage(),
       ],
     );
   }
 
   Widget getFooter() {
     List<IconData> iconItems = [
-      Ionicons.md_calendar,
+      Ionicons.md_home,
       Ionicons.md_stats,
       Ionicons.md_wallet,
       Ionicons.ios_person,

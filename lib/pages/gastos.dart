@@ -26,7 +26,7 @@ class _GastosPageState extends State<GastosPage> {
             decoration: const BoxDecoration(
                 color: Color(0xff9056ab),
                 boxShadow: [
-                  BoxShadow(color: Colors.grey, spreadRadius: 10, blurRadius: 3)
+                  BoxShadow(color: Colors.white38, spreadRadius: 10, blurRadius: 3)
                 ]),
             child: Padding(
               padding: const EdgeInsets.only(
